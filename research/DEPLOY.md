@@ -16,4 +16,9 @@ Project name: **sharpmetrics-portfolio**
 
 Linked to the GitHub repo for automatic production deploys on push.
 
-Expected URL: `https://sharpmetrics-portfolio.vercel.app`
+Expected URL: `https://sharpmetrics-portfolio.vercel.app` (live)
+
+## Status
+
+- GitHub: https://github.com/sharpmetricsagency/sharpmetrics-portfolio
+- Production: https://sharpmetrics-portfolio.vercel.app
