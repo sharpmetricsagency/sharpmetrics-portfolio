@@ -1,0 +1,18 @@
+{
+  "slug": "allamo",
+  "title": "All'Amo",
+  "client": "All'Amo (ristorante)",
+  "kind": "contenuti",
+  "url": null,
+  "showUrl": false,
+  "featured": false,
+  "stack": ["Cloudflare Pages", "Static site"],
+  "summary": "Migrazione sito ristorante da Infolab a Cloudflare Pages con rebuild statico.",
+  "problem": "Sito legacy lento e difficile da mantenere su piattaforma obsoleta.",
+  "intervention": "Rebuild statico e deploy su Cloudflare Pages.",
+  "result": "Sito migrato su infrastruttura edge moderna.",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": [],
+  "screenshots": []
+}

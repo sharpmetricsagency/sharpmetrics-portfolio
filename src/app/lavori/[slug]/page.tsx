@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllWorks, getWork, kindLabel } from "@/lib/works";
+import { getPublicWorks, getWork, kindLabel } from "@/lib/works";
 
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return getAllWorks().map((w) => ({ slug: w.slug }));
+  return getPublicWorks().map((w) => ({ slug: w.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -28,7 +28,7 @@ export default async function LavoroPage({ params }: Props) {
   return (
     <article className="mx-auto max-w-5xl px-5 py-14">
       <Link href="/lavori" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
-        ← Tutti i lavori
+        ← All work
       </Link>
 
       <p className="mt-6 text-sm uppercase tracking-[0.18em] text-[var(--muted)]">
@@ -53,7 +53,7 @@ export default async function LavoroPage({ params }: Props) {
         ))}
       </div>
 
-      {work.url ? (
+      {work.showUrl && work.url ? (
         <p className="mt-4">
           <a
             href={work.url}
@@ -61,7 +61,7 @@ export default async function LavoroPage({ params }: Props) {
             rel="noopener noreferrer"
             className="text-sm text-[var(--accent)] underline-offset-4 hover:underline"
           >
-            Visita il sito →
+            Visit site →
           </a>
         </p>
       ) : null}
@@ -87,9 +87,9 @@ export default async function LavoroPage({ params }: Props) {
 
       <div className="mt-12 grid gap-8 md:grid-cols-3">
         {[
-          ["Problema", work.problem],
-          ["Intervento", work.intervention],
-          ["Risultato", work.result],
+          ["Challenge", work.problem],
+          ["Approach", work.intervention],
+          ["Outcome", work.result],
         ].map(([label, text]) => (
           <section key={label}>
             <h2 className="text-sm uppercase tracking-[0.16em] text-[var(--muted)]">
@@ -105,7 +105,7 @@ export default async function LavoroPage({ params }: Props) {
       {work.gaps.length > 0 ? (
         <section className="mt-12 rounded-lg border border-dashed border-[var(--line)] bg-[var(--surface)] p-5">
           <h2 className="text-sm uppercase tracking-[0.16em] text-[var(--muted)]">
-            Da completare con te
+            Open items
           </h2>
           <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-[var(--muted)]">
             {work.gaps.map((g) => (

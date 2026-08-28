@@ -1,0 +1,18 @@
+{
+  "slug": "n8n-google-ads-audit",
+  "title": "Audit Google Ads automatico",
+  "client": "Sharp Metrics",
+  "kind": "gestionale",
+  "url": null,
+  "showUrl": false,
+  "featured": false,
+  "stack": ["n8n", "Google Ads API", "Google Cloud OAuth", "Gemini"],
+  "summary": "Workflow n8n che genera audit mensili Google Ads con LLM e invio email automatico.",
+  "problem": "Audit account ads manuali, lenti e non scalabili per più clienti.",
+  "intervention": "Connessione Google Ads API (30 giorni dati). Redazione audit via Gemini Flash Lite (KPI, keyword, bidding). Email Markdown ogni 1° del mese.",
+  "result": "Workflow attivo per reportistica mensile.",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": [],
+  "screenshots": []
+}

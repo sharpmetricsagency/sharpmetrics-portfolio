@@ -1,0 +1,18 @@
+{
+  "slug": "treddy",
+  "title": "Treddy",
+  "client": "Treddy Srl",
+  "kind": "ecommerce",
+  "url": null,
+  "showUrl": false,
+  "featured": false,
+  "stack": ["GTM", "GA4", "Meta Ads", "Google Ads", "LinkedIn Ads", "Microsoft Ads"],
+  "summary": "Website management, CRO e campagne SEM multi-canale per ecommerce B2B/B2C.",
+  "problem": "Presenza digitale frammentata con tracking e performance ads non ottimizzati.",
+  "intervention": "Rebuild backend/frontend. UX/UI e data analysis CRO. Tracking avanzato. SEO + SEM (Google, Meta, LinkedIn, Microsoft).",
+  "result": "Collaborazione estesa sotto Sharp Metrics.",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": [],
+  "screenshots": []
+}

@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/lavori", label: "Lavori" },
-  { href: "/prodotti", label: "Prodotti" },
-  { href: "/contatto", label: "Contatto" },
+  { href: "/lavori", label: "Work" },
+  { href: "/prodotti", label: "Products" },
+  { href: "/contatto", label: "Contact" },
 ];
 
 export function SiteHeader() {
@@ -34,7 +34,7 @@ export function SiteFooter() {
   return (
     <footer className="mt-auto border-t border-[var(--line)]">
       <div className="mx-auto flex max-w-5xl flex-col gap-2 px-5 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
-        <p>Portfolio di Giammarco — Sharp Metrics</p>
+        <p>Full Stack Growth Marketer · Sharp Metrics · Pescara, Italy</p>
         <a
           href="https://www.sharpmetricsagency.com"
           className="hover:text-[var(--foreground)]"

@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
 import { WorkCard } from "@/components/WorkCard";
-import { getAllWorks, kindLabel, type WorkKind } from "@/lib/works";
+import { getPublicWorks, kindLabel, type WorkKind } from "@/lib/works";
 
 export const metadata: Metadata = {
-  title: "Lavori",
+  title: "Work",
 };
 
 const order: WorkKind[] = [
   "ecommerce",
+  "gestionale",
   "contenuti",
   "prodotto",
   "plugin",
-  "gestionale",
 ];
 
 export default function LavoriPage() {
-  const works = getAllWorks();
+  const works = getPublicWorks();
   const groups = order
     .map((kind) => ({
       kind,
@@ -25,11 +25,10 @@ export default function LavoriPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-14">
-      <h1 className="font-[family-name:var(--font-display)] text-4xl">Lavori</h1>
+      <h1 className="font-[family-name:var(--font-display)] text-4xl">Work</h1>
       <p className="mt-3 max-w-2xl text-[var(--muted)]">
-        Schede costruite da siti live, plugin e cartelle di progetto. Dove il
-        ruolo non è ancora confermato, lo segnaliamo — completa l’intervista in{" "}
-        <code className="text-sm">content/interview.md</code>.
+        Selected ecommerce, healthcare, and product projects. Client URLs are
+        omitted for privacy; screenshots show the live experience.
       </p>
 
       <div className="mt-12 space-y-14">

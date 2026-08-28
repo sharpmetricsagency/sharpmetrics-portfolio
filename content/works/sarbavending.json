@@ -1,0 +1,18 @@
+{
+  "slug": "sarbavending",
+  "title": "Sarbavending",
+  "client": "Sarbavending",
+  "kind": "ecommerce",
+  "url": null,
+  "showUrl": false,
+  "featured": false,
+  "stack": ["WordPress", "WooCommerce", "GTM", "Google Ads"],
+  "summary": "Audit tecnico, rebuild ecommerce e campagne Google Ads continuative.",
+  "problem": "Store datato con performance e tracking insufficienti per scaling ads.",
+  "intervention": "Technical audit e market analysis. Rebuild backend/frontend con cambio tema. GTM avanzato. Google Ads ongoing.",
+  "result": "Store ristrutturato sotto Sharp Metrics.",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": [],
+  "screenshots": []
+}

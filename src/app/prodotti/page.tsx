@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllWorks } from "@/lib/works";
+import { getPublicWorks } from "@/lib/works";
 
 export const metadata: Metadata = {
-  title: "Prodotti",
+  title: "Products",
 };
 
 export default function ProdottiPage() {
-  const products = getAllWorks().filter((w) =>
+  const products = getPublicWorks().filter((w) =>
     ["prodotto", "plugin", "gestionale"].includes(w.kind),
   );
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-14">
       <h1 className="font-[family-name:var(--font-display)] text-4xl">
-        Prodotti
+        Products
       </h1>
       <p className="mt-3 max-w-2xl text-[var(--muted)]">
-        Framework, plugin e sistemi operativi riusabili — Sharp Commerce, moduli
-        WooCommerce, Sharp Metrics / n8n.
+        Reusable frameworks, plugins, and operations systems — Sharp Commerce,
+        SharpWMS, SIVIS CF7, WooCommerce modules, and n8n automation.
       </p>
 
       <div className="mt-10 space-y-4">

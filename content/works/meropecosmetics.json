@@ -1,0 +1,18 @@
+{
+  "slug": "meropecosmetics",
+  "title": "Mero Cosmetics",
+  "client": "Mero Cosmetics",
+  "kind": "ecommerce",
+  "url": null,
+  "showUrl": false,
+  "featured": false,
+  "stack": ["Shopify", "WooCommerce", "REST API", "Python"],
+  "summary": "Migrazione catalogo Shopify → WooCommerce: 1.074 prodotti con matching EAN e traduzione taglie.",
+  "problem": "Catalogo grande su Shopify da portare su WooCommerce senza perdere attributi, immagini e varianti.",
+  "intervention": "Scraping 1.074 prodotti, matching EAN, script REST API per attributi/immagini, traduzione taglie DE→IT.",
+  "result": "Catalogo migrato con struttura attributi preservata.",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": [],
+  "screenshots": []
+}

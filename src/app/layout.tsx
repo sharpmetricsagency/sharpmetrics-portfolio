@@ -4,11 +4,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Giammarco — Portfolio ecommerce & plugin",
+    default: "Giammarco — Full Stack Growth Marketer",
     template: "%s · Giammarco",
   },
   description:
-    "Portfolio di lavori web: ecommerce WooCommerce, plugin, gestionali Sharp Metrics, contenuti e automazioni.",
+    "Portfolio of ecommerce, WooCommerce plugins, WMS systems, tracking, and marketing automation by Giammarco at Sharp Metrics.",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="it" className="h-full antialiased">
+    <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
         <SiteHeader />
         <main className="flex-1">{children}</main>

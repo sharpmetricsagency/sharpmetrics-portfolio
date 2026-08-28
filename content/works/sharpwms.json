@@ -1,0 +1,18 @@
+{
+  "slug": "sharpwms",
+  "title": "SharpWMS",
+  "client": "Sharp Metrics",
+  "kind": "gestionale",
+  "url": null,
+  "showUrl": false,
+  "featured": true,
+  "stack": ["Laravel 13", "React", "Vite", "Hetzner", "Nginx"],
+  "summary": "WMS ecommerce end-to-end: dalla logistica in entrata all'uscita, con integrazioni corriere e DDT.",
+  "problem": "I negozi mid-market non hanno un gestionale magazzino integrato con ecommerce e corrieri.",
+  "intervention": "Build from scratch su VPS Hetzner. PRD stile Deagor. Fix PHP, SSL nginx, DNS Let's Encrypt. UI React/Vite.",
+  "result": "Sistema deployato e pubblicabile come prodotto per clienti ecommerce.",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": [],
+  "screenshots": []
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "octo360",
+  "title": "Octo360 Agency",
+  "client": "Octo360 Agency",
+  "kind": "contenuti",
+  "url": null,
+  "showUrl": false,
+  "featured": false,
+  "stack": ["GTM", "GA4", "Consent Mode v2", "Enhanced Conversions", "server-side"],
+  "summary": "Tracking avanzato in white-label: GTM, GA4, Consent Mode v2, Enhanced Conversions e server-side.",
+  "problem": "Agenzia partner senza capacità tracking interna per clienti enterprise.",
+  "intervention": "Erogazione servizi tracking conto terzi (GTM, GA4, Consent Mode v2, Enhanced Conversions, server-side).",
+  "result": "Delivery tracking per clienti Octo360.",
+  "nda": true,
+  "roleUnknown": false,
+  "gaps": [],
+  "screenshots": []
+}

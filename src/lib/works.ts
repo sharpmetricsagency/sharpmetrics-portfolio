@@ -14,6 +14,7 @@ export type Work = {
   client?: string;
   kind: WorkKind;
   url?: string | null;
+  showUrl?: boolean;
   featured: boolean;
   stack: string[];
   summary: string;
@@ -40,12 +41,16 @@ export function getAllWorks(): Work[] {
   });
 }
 
+export function getPublicWorks(): Work[] {
+  return getAllWorks().filter((work) => !work.nda);
+}
+
 export function getWork(slug: string): Work | undefined {
-  return getAllWorks().find((w) => w.slug === slug);
+  return getPublicWorks().find((w) => w.slug === slug);
 }
 
 export function getFeaturedWorks(): Work[] {
-  return getAllWorks().filter((w) => w.featured);
+  return getPublicWorks().filter((w) => w.featured);
 }
 
 export const kindLabel: Record<WorkKind, string> = {

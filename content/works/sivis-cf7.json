@@ -1,0 +1,18 @@
+{
+  "slug": "sivis-cf7",
+  "title": "SIVIS CF7 Integration",
+  "client": "Genera / Centro Demetra",
+  "kind": "plugin",
+  "url": null,
+  "showUrl": false,
+  "featured": false,
+  "stack": ["WordPress", "CF7", "MuleSoft", "PHP"],
+  "summary": "Plugin che collega 18 form Contact Form 7 al CRM sanitario IVI/IVIRMA via MuleSoft.",
+  "problem": "Lead da form web non arrivavano al CRM in tempo utile con mapping per sede e tipo visita.",
+  "intervention": "Mapping 18 form, correlation ID UUID v4, admin credenziali/ambiente, deduplica lead condivisa Genera/Demetra.",
+  "result": "Risposta CRM confermata sotto 1 secondo.",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": [],
+  "screenshots": []
+}

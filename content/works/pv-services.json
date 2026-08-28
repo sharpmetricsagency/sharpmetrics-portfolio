@@ -1,0 +1,18 @@
+{
+  "slug": "pv-services",
+  "title": "PV Services",
+  "client": "PV Services S.r.l.",
+  "kind": "contenuti",
+  "url": null,
+  "showUrl": false,
+  "featured": false,
+  "stack": ["YOOtheme", "CF7", "GTM server-side", "GA4", "Google Ads"],
+  "summary": "Landing B2B per manutenzione impianti fotovoltaici con tracking server-side e conversioni Google Ads.",
+  "problem": "Lead generation B2B per clienti orfani di impianti FV senza landing dedicata e tracking affidabile.",
+  "intervention": "Landing HTML YOOtheme + CF7. GTM server-side, stream GA4, conversioni Google Ads. Team con PM Emanuele Messina.",
+  "result": "Progetto avviato agosto 2026 per lead gen B2B.",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": [],
+  "screenshots": []
+}
