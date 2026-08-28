@@ -1,23 +1,22 @@
-# Portfolio Giammarco
+# Sharp Metrics Portfolio
 
-Sito portfolio (Next.js) con schede lavoro, screenshot dei negozi clienti e
-prompt per estrarre conoscenze da Claude / Gemini / Perplexity.
+Public portfolio site (Next.js): work cards, client screenshots, and Sharp Metrics products.
 
-## Comandi
+## Commands
 
 ```bash
 npm run dev
 npm run build
 ```
 
-## Contenuti
+## Live
 
-- `content/works/*.json` — schede progetto
-- `content/interview.md` — domande aperte (copy / ruolo / NDA)
-- `research/inventory.md` — inventario fonti locali
-- `research/prompts/extract-portfolio-knowledge.md` — prompt da incollare negli altri agenti
-- `public/screenshots/` — catture pubbliche (no admin)
+- **GitHub:** https://github.com/giammarcosharp/sharpmetrics-portfolio
+- **Production:** deployed on Vercel as `sharpmetrics-portfolio`
 
-## Deploy
+## Contents
 
-Push su GitHub e deploy Vercel. Il link pubblico arriva da lì, non da Automations Cursor.
+- `content/works/*.json` — project cards
+- `content/interview.md` — open publication questions
+- `research/memory-extract.md` — merged agent notes
+- `public/screenshots/` — public client captures (no admin)
