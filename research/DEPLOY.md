@@ -2,11 +2,11 @@
 
 ## GitHub
 
-Repository: `giammarcosharp/sharpmetrics-portfolio` (public)
+Repository: `sharpmetricsagency/sharpmetrics-portfolio` (public)
 
 ```bash
 cd ~/Projects/giammarco-portfolio
-git remote add origin git@github.com/giammarcosharp/sharpmetrics-portfolio.git
+git remote add origin https://github.com/sharpmetricsagency/sharpmetrics-portfolio.git
 git push -u origin master
 ```
 

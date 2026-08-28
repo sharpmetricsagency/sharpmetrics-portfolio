@@ -11,7 +11,7 @@ npm run build
 
 ## Live
 
-- **GitHub:** https://github.com/giammarcosharp/sharpmetrics-portfolio
+- **GitHub:** https://github.com/sharpmetricsagency/sharpmetrics-portfolio
 - **Production:** deployed on Vercel as `sharpmetrics-portfolio`
 
 ## Contents
