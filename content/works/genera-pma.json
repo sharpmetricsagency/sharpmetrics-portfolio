@@ -1,0 +1,17 @@
+{
+  "slug": "genera-pma",
+  "title": "Genera PMA",
+  "client": "Genera PMA",
+  "kind": "ecommerce",
+  "url": "https://generapma.it",
+  "featured": false,
+  "stack": ["ecommerce"],
+  "summary": "Progetto web cliente live. Scheda da completare con ruolo e stack reali.",
+  "problem": "Da confermare.",
+  "intervention": "Da confermare.",
+  "result": "Da confermare.",
+  "nda": false,
+  "roleUnknown": true,
+  "gaps": ["Ruolo", "Problema", "Risultato", "NDA"],
+  "screenshots": ["/screenshots/genera-pma-home.png", "/screenshots/genera-pma-page.png"]
+}

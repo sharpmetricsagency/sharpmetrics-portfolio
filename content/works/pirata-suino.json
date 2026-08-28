@@ -1,0 +1,17 @@
+{
+  "slug": "pirata-suino",
+  "title": "Pirata Suino",
+  "client": "Pirata Suino",
+  "kind": "ecommerce",
+  "url": "https://piratasuino.it",
+  "featured": false,
+  "stack": ["ecommerce"],
+  "summary": "Ecommerce food / brand. Evidenza locale: dominio; ruolo da intervista.",
+  "problem": "Da confermare.",
+  "intervention": "Da confermare.",
+  "result": "Da confermare.",
+  "nda": false,
+  "roleUnknown": true,
+  "gaps": ["Ruolo", "Problema", "Risultato", "NDA"],
+  "screenshots": ["/screenshots/pirata-suino-home.png", "/screenshots/pirata-suino-page.png"]
+}

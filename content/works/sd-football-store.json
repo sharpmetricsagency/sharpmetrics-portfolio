@@ -1,0 +1,17 @@
+{
+  "slug": "sd-football-store",
+  "title": "SD Football Store",
+  "client": "SD Football Store",
+  "kind": "ecommerce",
+  "url": "https://sdfootballstore.it",
+  "featured": true,
+  "stack": ["WooCommerce", "plugin BOGO", "SEO / blog", "promo"],
+  "summary": "Ecommerce scarpe da calcio con contenuti SEO e plugin promozionali (BOGO / regali) presenti in locale.",
+  "problem": "Catalogo sportivo ad alta rotazione: serve storefront, promozioni carrello e contenuti che intercettino intenzioni d’acquisto (terreni, modelli).",
+  "intervention": "Blog writer dedicato in Documenti/Claude; zip `sd-bogo-gifts` in Scaricati; possibile stack promo Sharp. Ruolo end-to-end da confermare.",
+  "result": "Store live; guide SEO in locale (es. scarpe calcio terreni morbidi).",
+  "nda": false,
+  "roleUnknown": true,
+  "gaps": ["Conferma ownership BOGO", "Tracking / ads", "Metriche"],
+  "screenshots": ["/screenshots/sd-football-home.png", "/screenshots/sd-football-page.png"]
+}

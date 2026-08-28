@@ -1,0 +1,17 @@
+{
+  "slug": "sharp-metrics",
+  "title": "Sharp Metrics",
+  "client": "Sharp Metrics",
+  "kind": "gestionale",
+  "url": "https://www.sharpmetricsagency.com",
+  "featured": true,
+  "stack": ["n8n", "Google Ads", "Meta Ads", "GTM", "CRM", "automazioni"],
+  "summary": "Agenzia e sistema operativo: automazioni n8n (ads, email/CRM, contenuti, chatbot, reportistica, ecommerce, SEO) su istanza dedicata.",
+  "problem": "Operazioni marketing ecommerce frammentate tra ads, CRM, report e contenuti.",
+  "intervention": "Co-fondazione e stack n8n (Documenti/n8n-sharpmetrics + sharp-metrics-OS). Workflow su advertising, nurturing, lead, inventory alert, SEO.",
+  "result": "Piattaforma operativa attiva (n8n.sharpmetricsagency.com). Dettaglio casi cliente da filtrare per NDA.",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": ["Case study pubblici selezionati", "Se includere SharpWMS / Sharpstore"],
+  "screenshots": []
+}

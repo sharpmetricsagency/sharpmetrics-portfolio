@@ -1,0 +1,17 @@
+{
+  "slug": "contesa",
+  "title": "Contesa",
+  "client": "Contesa",
+  "kind": "ecommerce",
+  "url": "https://contesa.it",
+  "featured": false,
+  "stack": ["WooCommerce", "WordPress"],
+  "summary": "Ecommerce cliente live. Scheda da arricchire con il tuo ruolo.",
+  "problem": "Da confermare in intervista.",
+  "intervention": "Da confermare: sviluppo, custom, marketing, tracking.",
+  "result": "Da confermare.",
+  "nda": false,
+  "roleUnknown": true,
+  "gaps": ["Ruolo", "Problema", "Risultato", "NDA"],
+  "screenshots": ["/screenshots/contesa-home.png", "/screenshots/contesa-page.png"]
+}

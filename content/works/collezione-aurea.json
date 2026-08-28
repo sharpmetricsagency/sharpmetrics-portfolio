@@ -1,0 +1,17 @@
+{
+  "slug": "collezione-aurea",
+  "title": "Collezione Aurea",
+  "client": "Collezione Aurea",
+  "kind": "ecommerce",
+  "url": "https://collezioneaurea.com",
+  "featured": true,
+  "stack": ["WooCommerce", "WordPress", "SEO / blog", "contenuti"],
+  "summary": "Ecommerce calzature artigianali e editoria di prodotto: store live più pipeline di articoli SEO pubblicati via workflow dedicati.",
+  "problem": "Un brand product-led ha bisogno di storefront coerente e di contenuti che portino traffico qualificato sulle categorie e sulle guide d’acquisto.",
+  "intervention": "Lavoro sullo store e sulla macchina editoriale (cartella Blog Writer con articoli HTML e registri di pubblicazione). Ruolo esatto sul tema/tracking da confermare in intervista.",
+  "result": "Store pubblico attivo; articoli SEO prodotti e tracciati in locale (es. slingback, scarpe da sposa, pelle artigianale).",
+  "nda": false,
+  "roleUnknown": true,
+  "gaps": ["Ruolo preciso (tema vs plugin vs tracking vs ads)", "Metriche risultato", "NDA"],
+  "screenshots": ["/screenshots/collezione-aurea-home.png", "/screenshots/collezione-aurea-page.png"]
+}

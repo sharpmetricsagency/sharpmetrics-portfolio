@@ -1,0 +1,17 @@
+{
+  "slug": "centro-demetra",
+  "title": "Centro Demetra",
+  "client": "Centro Demetra",
+  "kind": "contenuti",
+  "url": "https://centrodemetra.com",
+  "featured": true,
+  "stack": ["email marketing", "HTML email", "lead / webinar"],
+  "summary": "Presenza web e asset CRM: in Scaricati c’è un’email webinar di produzione (`demetra_webinar_email_PRODUZIONE_v3.html`).",
+  "problem": "Attivare lead e partecipazione a webinar con comunicazione on-brand.",
+  "intervention": "Produzione email HTML webinar. Ruolo sul sito (tema, landing, tracking) da confermare.",
+  "result": "Asset email in stato produzione in locale.",
+  "nda": false,
+  "roleUnknown": true,
+  "gaps": ["Ruolo sul sito", "Risultati webinar", "NDA"],
+  "screenshots": ["/screenshots/centro-demetra-home.png", "/screenshots/centro-demetra-page.png"]
+}

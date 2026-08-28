@@ -1,0 +1,17 @@
+{
+  "slug": "moda-capelli",
+  "title": "Moda Capelli Shop",
+  "client": "Moda Capelli",
+  "kind": "ecommerce",
+  "url": "https://modacapellishop.it",
+  "featured": true,
+  "stack": ["WooCommerce", "WordPress"],
+  "summary": "Ecommerce beauty / haircare. Evidenza principale: sito live da catturare; ruolo locale da completare con te.",
+  "problem": "Negozio online che deve convertire catalogo e promozioni in un mercato competitivo.",
+  "intervention": "Intervento da descrivere in intervista (setup, custom, tracking, creatività). Nessuna cartella locale col brand oltre al dominio in elenco.",
+  "result": "Da confermare.",
+  "nda": false,
+  "roleUnknown": true,
+  "gaps": ["Cosa hai fatto tu", "Risultato", "NDA"],
+  "screenshots": ["/screenshots/moda-capelli-home.png", "/screenshots/moda-capelli-page.png"]
+}

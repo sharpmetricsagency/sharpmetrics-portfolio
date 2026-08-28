@@ -1,0 +1,17 @@
+{
+  "slug": "sharp-commerce",
+  "title": "Sharp Commerce",
+  "client": "Sharp Metrics",
+  "kind": "prodotto",
+  "url": null,
+  "featured": true,
+  "stack": ["WordPress FSE", "WooCommerce", "PHP 8.3+", "Node", "DDEV", "Playwright"],
+  "summary": "Framework ecommerce premium multi-cliente: tema Full Site Editing, Sharp Commerce Core e sette moduli commerce (wishlist, preordine, kit, BOGO, quantity breaks, free shipping progress, cross-sell).",
+  "problem": "I negozi WooCommerce ripetono le stesse logiche di conversione (promo, wishlist, kit) senza un design system e contratti server-side riusabili.",
+  "intervention": "Codebase monorepo in anti-gravity: tema FSE, moduli plugin separati, pattern Gutenberg, suite browser (~1175 casi). Brief design in Claude Design.",
+  "result": "Negozio locale funzionante con moduli disattivabili senza UI orfane. Framework ancora in hardening (guide progetto, gateway pagamento).",
+  "nda": false,
+  "roleUnknown": false,
+  "gaps": ["URL demo pubblica se esiste", "Clienti già su Sharp Commerce"],
+  "screenshots": []
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "aptiqe",
+  "title": "Aptiqe",
+  "client": "Aptiqe",
+  "kind": "ecommerce",
+  "url": "https://aptiqe.com",
+  "featured": false,
+  "stack": ["ecommerce"],
+  "summary": "Ecommerce cliente live. Evidenza locale limitata al dominio: serve la tua descrizione del lavoro.",
+  "problem": "Da confermare.",
+  "intervention": "Da confermare.",
+  "result": "Da confermare.",
+  "nda": false,
+  "roleUnknown": true,
+  "gaps": ["Ruolo", "Problema", "Risultato", "NDA"],
+  "screenshots": ["/screenshots/aptiqe-home.png", "/screenshots/aptiqe-page.png"]
+}
