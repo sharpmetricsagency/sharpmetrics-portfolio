@@ -6,10 +6,17 @@ export const metadata: Metadata = {
   title: "Products",
 };
 
+const productSlugs = [
+  "sharp-commerce",
+  "sharpwms",
+  "sharp-metrics",
+  "plugin-woocommerce",
+  "sivis-cf7",
+  "n8n-google-ads-audit",
+];
+
 export default function ProdottiPage() {
-  const products = getPublicWorks().filter((w) =>
-    ["prodotto", "plugin", "gestionale"].includes(w.kind),
-  );
+  const products = getPublicWorks().filter((w) => productSlugs.includes(w.slug));
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-14">

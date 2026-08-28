@@ -1,12 +1,26 @@
-# Open items
+# Open questions (portfolio publish)
 
-Profile is set: **Full Stack Growth Marketer**, Pescara. CTA → sharpmetricsagency.com. EN primary, IT secondary.
+Profile, role, and project facts are merged into `content/works/`. Only publication and metric gaps remain.
 
-Privacy rule applied: client site URLs hidden (screenshots only). No financial metrics on public cards.
+## Public display
 
-## Still optional
+- [ ] Which client case studies can use the **brand name** publicly? (All eight sites + Modacapelli + extras?)
+- [ ] When can we add **client URLs** again, or keep screenshots-only indefinitely?
+- [ ] Any client that must stay **fully anonymous** (screenshot cropped/blurred)?
 
-- [ ] Octo360 white-label tracking — excluded from portfolio (NDA)
-- [ ] Slidev client decks — add as product/case if desired
-- [ ] Screenshots for new works without images (Mero, PV, Sarbavending, etc.)
-- [ ] Deploy: see `research/DEPLOY.md`
+## Metrics (optional, no financials)
+
+- [ ] Collezione Aurea: any safe qualitative outcome beyond “store live + ads approved”?
+- [ ] SD Football: post-GTM/Meta fix trend (qualitative OK, no revenue)?
+- [ ] Aptiqe: OK to cite CPC/CTR improvements publicly?
+- [ ] Contesa / Genera / Demetra: any outcome safe for healthcare case studies?
+
+## Assets still missing
+
+- [ ] SharpWMS UI screenshots for product page
+- [ ] Screenshots for: Mero P, PV Services, All'Amo, Sarbavending, ML SOCKS, Treedy
+- [ ] Sharp Commerce demo beyond local DDEV (video or staging URL?)
+
+## Language
+
+- [ ] Confirm English-only public site, or add Italian `/it` routes later?
