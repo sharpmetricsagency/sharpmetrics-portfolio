@@ -1,23 +1,28 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
-import { kindLabel, type Work } from "@/lib/works"
+import { ArrowUpRight } from "@phosphor-icons/react"
+import { motion } from "framer-motion"
+import { fadeUp, RevealGroup, RevealItem } from "@/components/motion/Reveal"
+import { kindLabel, type Work } from "@/lib/work-types"
 
 const layoutClasses = [
-  "md:col-span-5 md:col-start-1 md:row-start-1",
-  "md:col-span-6 md:col-start-7 md:row-start-2",
-  "md:col-span-5 md:col-start-2 md:row-start-3",
-  "md:col-span-6 md:col-start-7 md:row-start-4",
-  "md:col-span-5 md:col-start-1 md:row-start-5",
-  "md:col-span-6 md:col-start-6 md:row-start-6",
+  "lg:col-span-5 lg:col-start-1 lg:row-start-1",
+  "lg:col-span-6 lg:col-start-7 lg:row-start-2",
+  "lg:col-span-5 lg:col-start-2 lg:row-start-3",
+  "lg:col-span-6 lg:col-start-7 lg:row-start-4",
+  "lg:col-span-5 lg:col-start-1 lg:row-start-5",
+  "lg:col-span-6 lg:col-start-6 lg:row-start-6",
 ]
 
 const sizeClasses = [
   "aspect-[4/5] max-w-sm",
-  "aspect-square max-w-lg md:ml-auto",
+  "aspect-square max-w-lg lg:ml-auto",
   "aspect-[4/5] max-w-md",
-  "aspect-[16/11] max-w-xl md:ml-auto",
+  "aspect-[16/11] max-w-xl lg:ml-auto",
   "aspect-[4/5] max-w-sm",
-  "aspect-square max-w-lg md:ml-auto",
+  "aspect-square max-w-lg lg:ml-auto",
 ]
 
 type StaggeredWorkGridProps = {
@@ -29,40 +34,54 @@ export const StaggeredWorkGrid = ({ works, compact = false }: StaggeredWorkGridP
   const items = compact ? works.slice(0, 6) : works
 
   return (
-    <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-x-8 md:gap-y-16">
+    <RevealGroup className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-x-10 lg:gap-y-20">
       {items.map((work, index) => {
         const cover = work.screenshots[0]
         const layout = layoutClasses[index % layoutClasses.length]
         const size = sizeClasses[index % sizeClasses.length]
+        const alignRight = index % 2 === 1
 
         return (
-          <Link
-            key={work.slug}
-            href={`/lavori/${work.slug}`}
-            className={`group block ${layout}`}
-          >
-            <div className={`relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface-2)] ${size}`}>
-              {cover ? (
-                <Image
-                  src={cover}
-                  alt={`Screenshot ${work.title}`}
-                  fill
-                  className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
-                  sizes="(max-width: 768px) 100vw, 40vw"
-                />
-              ) : (
-                <div className="flex h-full items-center justify-center px-6 text-center text-sm text-[var(--muted)]">
-                  {work.title}
+          <RevealItem key={work.slug} className={layout}>
+            <motion.div variants={fadeUp}>
+              <Link href={`/lavori/${work.slug}`} className="group block">
+                <div
+                  className={`relative overflow-hidden rounded-[1.75rem] border border-white/[0.08] bg-[var(--surface)] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] ${size}`}
+                >
+                  {cover ? (
+                    <Image
+                      src={cover}
+                      alt={`Screenshot ${work.title}`}
+                      fill
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                      sizes="(max-width: 1024px) 100vw, 40vw"
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center px-6 text-center text-sm text-[var(--muted)]">
+                      {work.title}
+                    </div>
+                  )}
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--background)]/60 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 </div>
-              )}
-            </div>
-            <div className={`mt-4 ${index % 2 === 1 ? "md:text-right" : ""}`}>
-              <h3 className="text-xl font-medium text-white">{work.title}</h3>
-              <p className="mt-1 text-sm text-[var(--muted)]">{kindLabel[work.kind]}</p>
-            </div>
-          </Link>
+                <div className={`mt-5 ${alignRight ? "lg:text-right" : ""}`}>
+                  <div className="flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+                    <span>{kindLabel[work.kind]}</span>
+                    <ArrowUpRight
+                      size={14}
+                      weight="bold"
+                      className="opacity-0 transition-opacity group-hover:opacity-100"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 className="mt-2 text-xl font-medium tracking-tight text-white md:text-2xl">
+                    {work.title}
+                  </h3>
+                </div>
+              </Link>
+            </motion.div>
+          </RevealItem>
         )
       })}
-    </div>
+    </RevealGroup>
   )
 }
