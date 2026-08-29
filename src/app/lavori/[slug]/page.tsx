@@ -1,119 +1,129 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { getPublicWorks, getWork, kindLabel } from "@/lib/works";
+import type { Metadata } from "next"
+import Image from "next/image"
+import Link from "next/link"
+import { notFound } from "next/navigation"
+import { SectionMarker } from "@/components/SectionMarker"
+import { getPublicWorks, getWork, kindLabel } from "@/lib/works"
 
-type Props = { params: Promise<{ slug: string }> };
+type Props = { params: Promise<{ slug: string }> }
 
 export function generateStaticParams() {
-  return getPublicWorks().map((w) => ({ slug: w.slug }));
+  return getPublicWorks().map((w) => ({ slug: w.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const work = getWork(slug);
-  if (!work) return {};
+  const { slug } = await params
+  const work = getWork(slug)
+  if (!work) return {}
   return {
     title: work.title,
     description: work.summary,
-  };
+  }
 }
 
 export default async function LavoroPage({ params }: Props) {
-  const { slug } = await params;
-  const work = getWork(slug);
-  if (!work) notFound();
+  const { slug } = await params
+  const work = getWork(slug)
+  if (!work) notFound()
 
   return (
-    <article className="mx-auto max-w-5xl px-5 py-14">
-      <Link href="/lavori" className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
-        ← All work
-      </Link>
+    <article className="px-5 pb-20 pt-28">
+      <div className="mx-auto max-w-6xl">
+        <Link
+          href="/lavori"
+          className="text-sm text-[var(--muted)] transition-colors hover:text-white"
+        >
+          ← All work
+        </Link>
 
-      <p className="mt-6 text-sm uppercase tracking-[0.18em] text-[var(--muted)]">
-        {kindLabel[work.kind]}
-        {work.client ? ` · ${work.client}` : ""}
-      </p>
-      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl sm:text-5xl">
-        {work.title}
-      </h1>
-      <p className="mt-4 max-w-3xl text-lg leading-relaxed text-[var(--muted)]">
-        {work.summary}
-      </p>
+        <div className="mt-10 flex items-start justify-between gap-6">
+          <SectionMarker index="03." />
+          <div className="text-right">
+            <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">
+              {kindLabel[work.kind]}
+              {work.client ? ` · ${work.client}` : ""}
+            </p>
+            <h1 className="mt-2 text-4xl font-medium tracking-tight text-white sm:text-5xl">
+              {work.title}
+            </h1>
+          </div>
+        </div>
 
-      <div className="mt-6 flex flex-wrap gap-2">
-        {work.stack.map((item) => (
-          <span
-            key={item}
-            className="rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-1 text-xs text-[var(--muted)]"
-          >
-            {item}
-          </span>
-        ))}
-      </div>
-
-      {work.showUrl && work.url ? (
-        <p className="mt-4">
-          <a
-            href={work.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-[var(--accent)] underline-offset-4 hover:underline"
-          >
-            Visit site →
-          </a>
+        <p className="mt-8 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+          {work.summary}
         </p>
-      ) : null}
 
-      {work.screenshots.length > 0 ? (
-        <div className="mt-10 grid gap-4 md:grid-cols-2">
-          {work.screenshots.map((src) => (
-            <div
-              key={src}
-              className="relative aspect-[16/10] overflow-hidden rounded-lg border border-[var(--line)] bg-[var(--surface-2)]"
+        <div className="mt-6 flex flex-wrap gap-2">
+          {work.stack.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-white/10 bg-[var(--surface-2)] px-3 py-1 text-xs text-[var(--muted)]"
             >
-              <Image
-                src={src}
-                alt={`Screenshot ${work.title}`}
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
+              {item}
+            </span>
           ))}
         </div>
-      ) : null}
 
-      <div className="mt-12 grid gap-8 md:grid-cols-3">
-        {[
-          ["Challenge", work.problem],
-          ["Approach", work.intervention],
-          ["Outcome", work.result],
-        ].map(([label, text]) => (
-          <section key={label}>
-            <h2 className="text-sm uppercase tracking-[0.16em] text-[var(--muted)]">
-              {label}
-            </h2>
-            <p className="mt-3 text-sm leading-relaxed text-[var(--foreground)]">
-              {text}
-            </p>
-          </section>
-        ))}
-      </div>
+        {work.showUrl && work.url ? (
+          <p className="mt-4">
+            <a
+              href={work.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-[var(--accent)] underline-offset-4 hover:underline"
+            >
+              Visit site →
+            </a>
+          </p>
+        ) : null}
 
-      {work.gaps.length > 0 ? (
-        <section className="mt-12 rounded-lg border border-dashed border-[var(--line)] bg-[var(--surface)] p-5">
-          <h2 className="text-sm uppercase tracking-[0.16em] text-[var(--muted)]">
-            Open items
-          </h2>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-[var(--muted)]">
-            {work.gaps.map((g) => (
-              <li key={g}>{g}</li>
+        {work.screenshots.length > 0 ? (
+          <div className="mt-12 grid gap-4 md:grid-cols-2">
+            {work.screenshots.map((src) => (
+              <div
+                key={src}
+                className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface-2)]"
+              >
+                <Image
+                  src={src}
+                  alt={`Screenshot ${work.title}`}
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             ))}
-          </ul>
-        </section>
-      ) : null}
+          </div>
+        ) : null}
+
+        <div className="mt-16 grid gap-10 border-t border-[var(--line)] pt-12 md:grid-cols-3">
+          {[
+            ["Challenge", work.problem],
+            ["Approach", work.intervention],
+            ["Outcome", work.result],
+          ].map(([label, text]) => (
+            <section key={label}>
+              <h2 className="text-sm uppercase tracking-[0.16em] text-[var(--muted)]">
+                {label}
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-white">{text}</p>
+            </section>
+          ))}
+        </div>
+
+        {work.gaps.length > 0 ? (
+          <section className="mt-12 rounded-2xl border border-dashed border-white/15 bg-[var(--surface-2)] p-6">
+            <h2 className="text-sm uppercase tracking-[0.16em] text-[var(--muted)]">
+              Open items
+            </h2>
+            <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-[var(--muted)]">
+              {work.gaps.map((g) => (
+                <li key={g}>{g}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+      </div>
     </article>
-  );
+  )
 }
